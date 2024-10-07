@@ -1,0 +1,79 @@
+/* 
+Colors:
+  Background: #293462
+  Red: #FE5F55
+  Dark Red: #A64942
+  Yellow: #FFF1C1
+*/
+
+.box {
+  background-color: #293462;
+}
+
+.shape-1 {
+  width: 50px;
+  height: 50px;
+  background-color: #fe5f55;
+  border-radius: 50%;
+  position: relative;
+  top: 85px;
+  left: 140px;
+  box-shadow: 70px 0 #fe5f55;
+}
+
+.shape-1::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff1c1;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 70px 0 #fff1c1;
+}
+
+.shape-1::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #293462;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 70px 0 #293462, 25px 55px #293462, 45px 55px #293462;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 100px;
+  background-color: #a64942;
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  top: 110px;
+  left: 125px;
+  z-index: -1;
+}
+.shape-2::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: #fe5f55;
+  border-radius: 50px 50px 0 0;
+  margin: auto;
+}
+.shape-2::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #fe5f55;
+  border-radius: 100%;
+  position: absolute;
+  top: 30px;
+}

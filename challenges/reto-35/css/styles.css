@@ -1,0 +1,75 @@
+/* 
+Colors:
+  Background: #1A4341
+  Yellow: #F3AC3C
+  Olive: #998235
+*/
+
+.box {
+  background-color: #1a4341;
+}
+
+.shape-1 {
+  width: 100px;
+  height: 60px;
+  background-color: #f3ac3c;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+  position: relative;
+  top: 110px;
+}
+.shape-1::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 80px;
+  background-color: #998235;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  top: 60px;
+}
+.shape-1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 20px;
+  background-color: #f3ac3c;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  top: -20px;
+  left: 25px;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 20px;
+  background-color: #f3ac3c;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+.shape-2::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 40px;
+  background-color: #f3ac3c;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  box-shadow: 90px -10px #f3ac3c;
+}
+.shape-2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #998235;
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+  box-shadow: 50px 0 #f3ac3c, 115px -55px 0 -15px #998235,
+    115px -25px 0 -15px #998235;
+}

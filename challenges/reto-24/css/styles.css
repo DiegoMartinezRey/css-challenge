@@ -1,0 +1,21 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #F3AC3C
+  Green: #1A4341
+  Olive: #998235
+*/
+
+.box {
+  background-color: #f3ac3c;
+}
+
+.switch {
+  width: 50px;
+  height: 50px;
+  background-color: #f3ac3c;
+  position: relative;
+  top: 200px;
+  left: 150px;
+  box-shadow: -25px -25px 0 25px #998235, 25px -75px 0 75px #1a4341;
+}

@@ -1,0 +1,35 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #0B2429
+  Yellow: #F7EC7D
+  Orange: #E38F66
+  Red: #AA445F
+*/
+
+.box {
+  background-color: #62306d;
+}
+
+.rectangle {
+  width: 100px;
+  height: 150px;
+  background-color: #aa445f;
+  border-radius: 50px;
+  position: relative;
+  top: 50px;
+  left: 80px;
+  box-shadow: 140px 50px #e38f66;
+}
+
+.rectangle::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #f7ec7d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  box-shadow: 140px 0 #f7ec7d;
+}

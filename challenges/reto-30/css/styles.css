@@ -1,0 +1,47 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #998235
+  Black: #191919
+  White: #fff
+*/
+
+.box {
+  background-color: #998235;
+}
+
+.piano {
+  width: 180px;
+  height: 100px;
+  background-color: #191919;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.piano::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  box-shadow: 25px 0 #fff, 50px 0 #fff, 75px 0 #fff, 100px 0 #fff, 125px 0 #fff,
+    150px 0 #fff;
+}
+
+.piano::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 35px;
+  background-color: #191919;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  box-shadow: 25px 0 #191919, 75px 0 #191919, 100px 0 #191919, 125px 0 #191919;
+}
